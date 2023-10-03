@@ -67,6 +67,22 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95H-vV-Gtm">
+                                <rect key="frame" x="16.000000000000004" y="334" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="XF2-NO-YDs" eventType="touchUpInside" id="tqz-fe-sLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyf-Ih-Oof">
+                                <rect key="frame" x="339.66666666666669" y="334" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶"/>
+                                <connections>
+                                    <action selector="didTapForwardButton:" destination="XF2-NO-YDs" eventType="touchUpInside" id="MmP-Mg-BnY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qd6-ab-F92"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -76,12 +92,16 @@
                             <constraint firstItem="2rW-KJ-LjW" firstAttribute="centerX" secondItem="KG0-Z2-JKA" secondAttribute="centerX" id="Jvv-ax-FOC"/>
                             <constraint firstItem="2SX-XS-So7" firstAttribute="top" secondItem="qd6-ab-F92" secondAttribute="top" constant="20" id="NyH-B9-tFg"/>
                             <constraint firstItem="2rW-KJ-LjW" firstAttribute="top" secondItem="2SX-XS-So7" secondAttribute="bottom" constant="75" id="Wbc-gD-0IN"/>
+                            <constraint firstItem="95H-vV-Gtm" firstAttribute="leading" secondItem="qd6-ab-F92" secondAttribute="leading" constant="16" id="Wkg-Am-Dg2"/>
+                            <constraint firstItem="95H-vV-Gtm" firstAttribute="centerY" secondItem="KG0-Z2-JKA" secondAttribute="centerY" constant="-75" id="ZX0-3r-fkG"/>
+                            <constraint firstItem="qd6-ab-F92" firstAttribute="trailing" secondItem="Uyf-Ih-Oof" secondAttribute="trailing" constant="16" id="ddY-Ta-5LV"/>
                             <constraint firstItem="BHP-ys-BY5" firstAttribute="top" secondItem="qd6-ab-F92" secondAttribute="top" constant="20" id="iST-qZ-pjw"/>
+                            <constraint firstItem="Uyf-Ih-Oof" firstAttribute="centerY" secondItem="KG0-Z2-JKA" secondAttribute="centerY" constant="-75" id="ttV-Bo-PSi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="4Fi-YJ-b2W" id="xMA-3w-LsW"/>
-                        <outlet property="discriptionLabel" destination="dG0-6X-BYm" id="2hV-SI-koZ"/>
+                        <outlet property="descriptionLabel" destination="dG0-6X-BYm" id="clv-eF-VM1"/>
                         <outlet property="forecastImageView" destination="Gy0-yz-NWL" id="7mk-rK-NAt"/>
                         <outlet property="locationLabel" destination="2SX-XS-So7" id="3na-HO-8lc"/>
                         <outlet property="temperatureLabel" destination="0rG-Gc-yip" id="nhx-Ti-REu"/>
